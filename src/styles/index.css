@@ -1,0 +1,73 @@
+:root {
+  /* light color scheme */
+  --text: #161925;
+  --text-h: #23395b;
+  --bg: #fcf7ff;
+  --border: #e5e4e7;
+  --link: #406e8e;
+
+  --accent: #dfc2f2;
+  /* alt #F2E5FA*/
+  /* alt 2 #CFB3CD */
+  --accent-bg: #8ea8c3;
+  --social-bg: #888098;
+
+  /* fonts */
+  --sans: system-ui, "Segoe UI", Roboto, sans-serif;
+  --heading: system-ui, "Segoe UI", Roboto, sans-serif;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.25px;
+  line-height: 1.5;
+  color: var(--text);
+  background: var(--bg);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+body {
+  margin: 0;
+}
+
+#root {
+  /* width: 1024px; */
+  max-width: 100%;
+  margin: 0;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  font-family: var(--heading);
+  font-weight: 500;
+  color: var(--text-h);
+}
+
+h1 {
+  font-size: 56px;
+  margin: 32px 0;
+  @media (max-width: 1024px) {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+}
+h2 {
+  font-size: 24px;
+  line-height: 118%;
+  margin: 0 0 8px;
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+}
+a {
+  color: var(--link);
+}
