@@ -35,19 +35,18 @@ span.chevron::before {
   content: url("../assets/chevron-down.svg");
   filter: brightness(0) saturate(100%) invert(19%) sepia(11%) saturate(2896%)
     hue-rotate(178deg) brightness(92%) contrast(90%);
-  width: 200px;
-  height: 200px;
+  width: 120px;
+  height: 120px;
   display: inline-block;
 
   position: absolute;
-  left: calc(50vw - 100px);
+  left: calc(50vw - 60px);
   top: 456px;
 }
 
 .hero {
   margin-top: -5em;
-  padding: 6em 8em 12em;
-  padding-bottom: 12em;
+  padding: 6em 8em 8em;
   /* background-color: var(--accent);
    */
   background: #dfc2f2;
@@ -73,14 +72,16 @@ header.hero div.content {
 }
 
 section {
-  margin: 2em auto;
+  margin: 1em auto;
+  padding-top: 1em;
   width: 952px;
   max-width: 100%;
 }
-section h2 {
+section h2,
+footer h2 {
   text-align: center;
   font-size: 32px;
-  margin: 1em;
+  margin: 36px;
 }
 
 a.cta {
@@ -109,20 +110,31 @@ main {
   float: left;
   margin: 20px;
 }
-section h2::after {
+section h2::after,
+footer h2::after {
   content: "";
   background-color: var(--text-h);
-  width: 128px;
+  width: 32px;
   height: 4px;
   display: block;
-  position: absolute;
-  left: calc(50vw - 64px);
+  position: relative;
+  left: calc(50% - 16px);
+  top: 16px;
+}
+footer h2 {
+  color: var(--bg);
+}
+footer h2::after {
+  background-color: var(--bg);
 }
 
 ul {
   margin: auto;
 }
 
+#about {
+  padding-bottom: 1em;
+}
 #about img {
   width: 300px;
   border-radius: 50px;
@@ -136,8 +148,16 @@ ul {
 #contact {
   clear: both;
   text-align: center;
+  line-height: 2.5;
 }
 #contact a {
   display: block;
   line-height: 2.5;
+  color: var(--bg);
+}
+footer {
+  margin-top: 2em;
+  padding: 2em;
+  background-color: var(--text-h);
+  color: var(--bg);
 }

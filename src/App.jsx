@@ -1,6 +1,7 @@
 import "./styles/App.css";
 import headshot from "./assets/headshot.png";
 import btd6 from "./assets/btd6_1.png";
+import greatwall from "./assets/great_wall_morgan_1.jpeg";
 
 function App() {
   return (
@@ -60,13 +61,11 @@ function App() {
             <p>
               A minimalist blog project, illustrating a full stack workflow with
               backend API database containing post data. Implementation of two
-              separate frontends: one for readers, one for authors. ... design
-              ideas, user functionality,
+              separate frontends: one for readers, one for authors.
             </p>
             <p>
               Skills: React.js, Node.js, Express, PostgreSQL, Prisma, HTML/CSS
             </p>
-            <p>Screenshots of the project</p>
             <p>
               <a href="">Author frontend</a>, <a href="">backend</a> and{" "}
               <a href="">link to the code on GitHub</a>.
@@ -76,7 +75,7 @@ function App() {
       </section>
       <section id="about">
         <h2>About Me</h2>
-        <img src={headshot} alt="" />
+        <img src={greatwall} alt="" />
         <p>
           I graduated magna cum laude from the University of Minnesota in 2025,
           where I received a Bachelor of Science in Computer Science and a
@@ -94,14 +93,15 @@ function App() {
           View resume
         </a>
       </section>
-      <section id="contact">
+      <footer id="contact">
         <h2>Contact</h2>
         <a href="mailto:morgan.f.bozeman@gmail.com">
           morgan.f.bozeman@gmail.com
         </a>
         <a href="https://linkedin.com/in/morganfbozeman/">LinkedIn</a>
         <a href="https://github.com/mfbozeman">GitHub</a>
-      </section>
+        <p>© 2026 Morgan Bozeman</p>
+      </footer>
     </>
   );
 }
